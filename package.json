@@ -1,0 +1,24 @@
+{
+  "name": "dynamic-source-public-path-plugin",
+  "version": "0.0.1",
+  "description": "A plugin that supports obtaining the runtime domain name and modifying the runtime publicPath",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "runtime-public-path",
+    "webpack",
+    "domain",
+    "dynamic"
+  ],
+  "author": "zengsiqing",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tuotuo-cloud/dynamic-source-public-path-plugin.git"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^5.3.2"
+  }
+}
