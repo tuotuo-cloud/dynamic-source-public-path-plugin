@@ -1,6 +1,6 @@
 {
   "name": "dynamic-source-public-path-plugin",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A plugin that supports obtaining the runtime domain name and modifying the runtime publicPath",
   "main": "index.js",
   "scripts": {
