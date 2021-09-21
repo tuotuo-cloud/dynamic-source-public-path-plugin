@@ -4,7 +4,7 @@ A plugin that supports obtaining the runtime domain name and modifying the runti
 
 ## install
 ```js
-npm i --save-dev dynamic-source-public-path-plugin
+npm i --save-dev dynamic-source-public-path-plugin@0.0.4
 ```
 ## usage
 `dynamic-source-public-path-plugin` depends on `html-webpack-plugin`, so you must install `html-webpack-plugin`. You can use it in your plugins like this:

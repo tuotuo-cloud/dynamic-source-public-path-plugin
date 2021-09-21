@@ -67,7 +67,7 @@ class DynamicSourcePublicPathPlugin {
 
         const topScript = `
             <script>
-              var host = window.location.host;
+              var host = window.location.origin;
               var publicPathTemplate = ${this.publicPathTemplate.toString()}
               window.publicPath = publicPathTemplate(host).replace('__RUNTIME_HOST__', host)
               function asyncAppendNode(tagName, fileName) {
@@ -75,10 +75,10 @@ class DynamicSourcePublicPathPlugin {
                 if (tagName === "link") {
                   node.type = "text/css";
                   node.rel = "stylesheet";
-                  node.href = window.publicPath + fileName;
+                  node.href = window.publicPath + 'css/'+ fileName;
                   document.head.appendChild(node);
                 } else {
-                  node.src = window.publicPath + fileName;
+                  node.src = window.publicPath +'js/'+  fileName;
                   document.body.appendChild(node);
                 }
               }
